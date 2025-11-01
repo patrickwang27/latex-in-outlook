@@ -1,0 +1,11 @@
+[Unit]
+Description=Local LaTeX→PNG render Flask server
+
+[Service]
+ExecStart=/usr/bin/python3 /home/yuhengw/local_tex_server.py
+WorkingDirectory=/home/yuhengw
+Restart=always
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target
